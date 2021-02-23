@@ -1,7 +1,19 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    ast (2.4.2)
     diff-lcs (1.4.4)
+    equatable (0.5.0)
+    necromancer (0.3.0)
+    parallel (1.20.1)
+    parser (3.0.0.0)
+      ast (~> 2.4.1)
+    pastel (0.6.1)
+      equatable (~> 0.5.0)
+      tty-color (~> 0.3.0)
+    rainbow (3.0.0)
+    regexp_parser (2.1.0)
+    rexml (3.2.4)
     rspec (3.6.0)
       rspec-core (~> 3.6.0)
       rspec-expectations (~> 3.6.0)
@@ -15,6 +27,31 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.6.0)
     rspec-support (3.6.0)
+    rubocop (1.10.0)
+      parallel (~> 1.10)
+      parser (>= 3.0.0.0)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8, < 3.0)
+      rexml
+      rubocop-ast (>= 1.2.0, < 2.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 3.0)
+    rubocop-ast (1.4.1)
+      parser (>= 2.7.1.5)
+    ruby-progressbar (1.11.0)
+    tty-color (0.3.0)
+    tty-screen (0.5.1)
+    tty-table (0.5.0)
+      equatable (~> 0.5.0)
+      necromancer (~> 0.3.0)
+      pastel (~> 0.6.0)
+      tty-screen (~> 0.5.0)
+      unicode_utils (~> 1.4.0)
+      verse (~> 0.4.0)
+    unicode-display_width (2.0.0)
+    unicode_utils (1.4.0)
+    verse (0.4.0)
+      unicode_utils (~> 1.4.0)
 
 PLATFORMS
   ruby
@@ -22,6 +59,8 @@ PLATFORMS
 
 DEPENDENCIES
   rspec (= 3.6.0)
+  rubocop
+  tty-table
 
 BUNDLED WITH
    2.2.0
